@@ -1,0 +1,39 @@
+.whyChooseUs__part {
+    overflow: hidden;
+
+    .chamber {
+        background-image: url(../../Img/chmaber.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .whyChooseUs {
+        background-color: $semiNavy;
+        padding: 25px 20px;
+
+        h3 {
+            color: $iceColor;
+            margin-bottom: 30px
+        }
+
+        p {
+            margin-bottom: 70px;
+            color: #aaa;
+        }
+
+        button {
+            border: hidden;
+            background-color: $semiRed;
+            padding: 15px 30px;
+            color: $iceColor;
+            width: 200px;
+            font-weight: bold;
+
+            &:hover {
+                background-color: $semiNavy;
+                @extend %transition__effect !optional;
+            }
+        }
+    }
+}

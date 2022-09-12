@@ -1,0 +1,17 @@
+
+// #--Variables
+$semiRed: rgb(224, 61, 61);
+$semiNavy: #1c5cbf;
+$iceColor: #fff;
+
+// #--Placeholders
+%transition__effect{
+    transition: all 0.3s ease-in-out;
+}
+// #--Classes
+.smooth{
+    transition: all 0.3s ease-in-out;
+}
+button:focus{
+    outline: none !important;
+}

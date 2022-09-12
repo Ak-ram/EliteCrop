@@ -1,0 +1,13 @@
+.loading_page{
+    height: 100vh;
+    width: 100vw;
+    background: #0e0e0e;
+    overflow: hidden;
+    z-index: 122;
+    div{
+        width: 5rem;
+        height: 5rem;
+        border-right-color: $semiNavy;
+        border-width: 5px;
+    }
+}

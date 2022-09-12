@@ -1,0 +1,95 @@
+.carousel__part {
+  a {
+    position: absolute;
+    background-color: #000;
+    opacity: 1;
+    color: $iceColor;
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+  }
+
+  position: relative;
+  overflow: hidden;
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .carousel-item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+  }
+
+  .carousel-inner {
+    .slide_one {
+      background-image: url(../../Img/banner.jpg);
+    }
+
+    .slide_two {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .slide_three {
+      background-image: url(../../Img/banner.jpg);
+    }
+  }
+
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 35%;
+    left: 3%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $iceColor;
+    text-align: start;
+    font-size: calc(1rem + 2.5vw);
+    font-weight: bold;
+
+    span {
+      background-color: $semiRed;
+      padding: 0px 10px 0px 7px;
+    }
+  }
+  .left-arrow,
+  .right-arrow {
+    top: 50%;
+    &:hover {
+      color: $semiRed;
+    }
+  }
+  .left-arrow {
+    left: -5em;
+  }
+
+  .right-arrow {
+    right: -5em;
+  }
+}
+
+.carousel__part a:hover i {
+  @extend %transition__effect !optional;
+  color: $semiRed;
+  transform: scale(1.5);
+}
+
+.carousel__part:hover .left-arrow {
+  @extend %transition__effect !optional;
+  left: 1em;
+}
+
+.carousel__part:hover .right-arrow {
+  @extend %transition__effect !optional;
+  right: 1em;
+}

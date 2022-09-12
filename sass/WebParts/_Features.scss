@@ -1,0 +1,39 @@
+.Features__part {
+    padding-top: 70px;
+    
+    div > i {
+        height: 50px;
+        width: 50px;
+        background-color: $semiRed;
+        border-radius: 50%;
+        color: $iceColor;
+        line-height: 50px
+    }
+
+    div > h5 {
+        color: $semiNavy;
+        padding-top: 20px
+    }
+
+}
+@media (max-width: 700px) {
+    
+    .Features__part .row > div {
+        flex-basis: 100%;
+        
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    
+    .Features__part .row > div {
+        flex-basis: 50%;
+        
+    }
+}
+@media (min-width: 900px) {
+    
+    .Features__part .row > div {
+        flex-basis: 25%;
+    }
+}

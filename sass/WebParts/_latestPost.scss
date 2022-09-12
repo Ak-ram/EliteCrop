@@ -1,0 +1,44 @@
+.latest-post__part {
+    .container {
+        header {
+            p {
+                max-width: 700px;
+                margin: auto;
+                margin-bottom: 50px;
+            }
+        }
+
+        .row {
+            div {
+                .card-body {
+                    a {
+                        color: $semiRed;
+                        font-weight: bold;
+
+                        &:hover {
+                            text-decoration: underline
+                        }
+                    }
+
+                    h5 {
+                        color: $semiNavy;
+                        font-size: calc(10px + 1vw);
+                    }
+                    p{
+                        font-size: calc(6px + 1vw);
+                    }
+                }
+            }
+
+            > div {
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                border: hidden;
+                border-radius: 0rem;
+            }
+        }
+    }
+}

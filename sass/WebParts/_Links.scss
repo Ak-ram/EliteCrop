@@ -1,0 +1,55 @@
+.links__part {
+    padding: 50px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #ddd;
+
+    span.Elite {
+        color: $semiNavy;
+        font-weight: 500;
+        font-size: 45px
+    }
+
+    span.Corp {
+        color: $semiRed;
+        font-size: 45px
+    }
+
+    .container-fluid {
+        .row {
+            i {
+                margin-right: 6px;
+                color: $semiNavy
+            }
+
+            ul {
+                li {
+                    color: $semiNavy;
+                    font-size: 18px;
+                    margin: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        color: $semiRed;
+                        @extend %transition__effect !optional;
+                        transform: translateX(10px)
+                    }
+
+                    > i {
+                        color: rgba(0, 0, 0, 0.2);
+                        margin-right: 5px;
+                        @extend %transition__effect !optional;
+                    }
+                }
+
+            }
+
+            .col {
+                h4 {
+                    color: $semiNavy;
+                    font-weight: 400;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
+}

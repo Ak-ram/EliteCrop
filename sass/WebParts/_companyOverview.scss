@@ -1,0 +1,36 @@
+.Company-Overview__part {
+    margin-top: 70px;
+    background-color: rgb(240, 245, 247);
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    h2 {
+        font-weight: bold
+    }
+
+    p {
+       
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 30px
+    }
+
+    button {
+        border: hidden;
+        background-color: $semiRed;
+        padding: 15px 30px;
+        color: $iceColor;
+        width: 200px;
+
+        &:hover {
+            background-color: $semiNavy;
+            @extend %transition__effect !optional;
+            transition: all .3s ease-in-out
+        }
+    }
+}

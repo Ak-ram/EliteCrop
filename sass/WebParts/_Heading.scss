@@ -1,0 +1,76 @@
+.heading__part {
+  .commanications {
+    background-color: $semiNavy;
+    .container-fluid {
+      i {
+        font-size: 10px;
+      }
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          color: $iceColor;
+          transition: all 0.3s;
+        }
+      }
+
+      .row {
+        .lets_work {
+          button {
+            border: 2px solid;
+            background-color: transparent;
+
+            &:hover {
+              background-color: $semiRed;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navigation__bar {
+    .container-fluid {
+      .navbar {
+        padding: 0.3rem 1rem;
+        button.navbar-toggler {
+          outline: none;
+        }
+      }
+      .navbar-light {
+        a.navbar-brand {
+          font-size: 45px;
+          span.Elite {
+            color: $semiNavy;
+            font-weight: 500;
+          }
+          span.Corp {
+            color: $semiRed;
+          }
+        }
+
+        .navbar-nav {
+          .nav-link {
+            color: $semiNavy;
+            font-size: 18px;
+
+            &:hover {
+              color: $semiRed;
+              transition: all 0.3s ease-in-out;
+            }
+
+            &:focus {
+              color: $semiRed;
+              transition: all 0.3s ease-in-out;
+            }
+          }
+
+          .nav-link.active {
+            color: $semiRed;
+          }
+        }
+      }
+    }
+  }
+}

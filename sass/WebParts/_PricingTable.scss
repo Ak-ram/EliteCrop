@@ -1,0 +1,81 @@
+.pricing-table__part {
+    padding: 50px 0px;
+    background-color: #f7f7f7;
+
+    .container {
+        .card {
+            margin: 10px;
+            .card-body {
+                padding: 0;
+
+                .card-title {
+                    color: $semiNavy;
+                    margin-top: 30px;
+                }
+
+                div {
+                    font-size: calc(10px + 3vw);
+                    color: $semiNavy;
+                    background-color: #f7f7f7;
+                    padding: 5px 0px;
+                    font-weight: bold;
+                    margin: 30px 0px;
+
+                    span {
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        font-weight: 400
+                    }
+                }
+
+                ul {
+                    > li {
+                        margin: 15px
+                    }
+                }
+
+                button {
+                    border: hidden;
+                    background-color: $semiRed;
+                    padding: 5% 10%;
+                    color: $iceColor;
+                    width: 200px;
+                    margin: 25px 0px ;
+
+                    &:hover {
+                        background-color: $semiNavy;
+                        @extend %transition__effect !optional;
+                    }
+                }
+            }
+            @media(min-width: 1000px){
+                &{
+                    flex: 0 0 41.666667%;
+                    max-width: calc(100% / 3.09);
+                }
+            }
+        }
+
+        header {
+            div.card.col {
+                div.card-body {
+                    div.price {
+                        background-color: $semiRed;
+                        color: $iceColor
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 30px
+    }
+
+    .plan-table .price {
+        padding: 0px
+    }
+
+}

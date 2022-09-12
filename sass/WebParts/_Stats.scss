@@ -1,0 +1,28 @@
+.stats__part {
+    .container {
+        padding: 30px;
+
+        .row {
+            .col {
+                i {
+                    color: $semiNavy;
+                    margin-bottom: 10px;
+                }
+
+                span:nth-child(2) {
+                    display: block;
+                    color: $semiNavy;
+                    font-weight: bold;
+                    font-size: 45px
+                }
+
+                span:nth-child(3) {
+                    display: block;
+                    color: $semiRed;
+                    letter-spacing: 2px
+                }
+            }
+        }
+
+    }
+}
